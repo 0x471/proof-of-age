@@ -124,6 +124,7 @@
           return data.json();
         })
         .then(d => {
+          console.log(d["publicInput"])
           fetch(`http://localhost:8080/validate-proof?proof=${JSON.stringify(d["proof"])}&signals=${JSON.stringify(d["publicInput"])}`)
             .then(data => {
               return data.json();
