@@ -4,9 +4,6 @@
 Simple ZKP application which estimates a persons age using AI and generates a proof if the person is adult or not.
 
 ## Technical Details
-
-![](scheme.png "Scheme")
-<br />
 The scheme represents a high-level architecture for a Zero Knowledge Proof (ZKP) based age verification project using estimated age for the picture of the user. The image data is then fed into a machine learning model, represented by the "Age Estimation Model" box. This model uses deep learning algorithms to analyze the image and predict the age of the person in the picture. The next step is to generate a Zero Knowledge Proof (ZKP), which is a cryptographic method that allows one party to prove to another that they have certain knowledge, without revealing the knowledge itself. In this case, the ZKP is generated based on the predicted age of the person in the image. The ZKP is represented by the "ZKP Generation" box in the diagram. The ZKP is then sent to the "ZKP Verifier", which is responsible for verifying the proof without learning any information about the age of the person. This is the key component that ensures the privacy of the user's data, as the verifier only receives the proof without accessing the actual age of the person.
 
 
